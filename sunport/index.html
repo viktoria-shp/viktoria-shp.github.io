@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
   </head>
 </html>
 <body>
@@ -22,12 +25,12 @@
             <div class="menu-opener"><span></span><span></span><span></span></div>
             <div class="menu">
                 <ul>
-                  <li class="active"><a href="index.html">Головна   </a></li>
-                  <li><a href="gratia-menu.html">Про проект   </a></li>
-                  <li><a href="dish.html">Показники   </a></li>
-                  <li><a href="contact.html">Галерея   </a></li>
-                  <li><a href="dish.html">Новини   </a></li>
-                  <li><a href="dish.html">Контакти   </a></li>
+                  <li class="active"><a class="scroll" href="#hero">Головна   </a></li>
+                  <li><a class="scroll" href="#about">Про проект   </a></li>
+                  <li><a class="scroll" href="#indexes">Показники   </a></li>
+                  <li><a class="scroll" href="#gallery ">Галерея   </a></li>
+                  <li><a class="scroll" href="#news">Новини   </a></li>
+                  <li><a class="scroll" href="#contact">Контакти   </a></li>
                 </ul>
             </div>
           </div>
@@ -35,14 +38,14 @@
       </div>
     </div>
   </div>
-  <div class="hero section-hero">
+  <div class="hero section-hero" id="hero">
     <div class="wrapper">
       <div class="row">
         <div class="column-phablet-3-4 column-tablet-3-4 column-laptop-3-4 column-desktop-1-2">
           <div class="hero__description">
             <div class="title"><span>Сонячний порт</span></div>
             <div class="right-t">
-              <div class="text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede, lobortis etiam dui et enim</span></div>
+              <div class="text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede, lobortis etiam dui et enim      </span></div>
             </div>
           </div>
         </div>
@@ -51,7 +54,7 @@
   </div>
   <div class="wrapper">
     <div class="row section-project-description">
-      <div class="project-description">
+      <div class="project-description" id="about">
         <div class="column-laptop-1-2">
           <div class="project-description__img right_ind"><img src="img/description-project.jpg"></div>
         </div>
@@ -66,81 +69,175 @@
       <div class="project-reports">
         <div class="column-laptop-1-2">
           <div class="project-reports__title"><span>звіти</span></div>
-          <div class="project-reports__link"><a href="#">Звіт про постачання та використання енергії</a><a href="#">Звіт про фінансові результати</a><a href="#">Звіт про баланс</a></div>
+          <div class="project-reports__link"><a href="#">Звіт про постачання та використання енергії<img src="img/exist-icon.svg"></a><a href="#">Звіт про фінансові результати<img src="img/exist-icon.svg"></a><a href="#">Звіт про баланс<img src="img/exist-icon.svg"></a></div>
         </div>
         <div class="column-laptop-1-2">
           <div class="project-reports__img left_ind"><img src="img/description-reports.jpg"></div>
         </div>
       </div>
     </div>
-    <div class="row section-project-indexes"> 
+  </div>
+</body>
+<div class="section-project-indexes">
+  <div class="bg-color"></div>
+  <div class="wrapper">
+    <div class="row">
       <div class="column-laptop-1-1">
-        <div class="project-indexes__title"><span>технічно-економічні показники проекту</span></div>
-        <div class="column-laptop-4-5">
-          <div class="project-indexes">
-            <div class="project-row">
-              <div class="project-col project-col-title two-cols">
-                <div>teasdasdasdasdasdasd</div>
-                <div>teasdasdasdasdasdasd</div>
+        <div class="project-indexes" id="indexes">    
+          <div class="column-laptop-1-2">
+            <div class="project-indexes__title"><span>технічно-економічні показники проекту</span></div>
+          </div>
+          <div class="column-laptop-3-4">
+            <div class="project-indexes__text">
+              <div class="project-row">
+                <div class="project-col project-col-title two-cols">
+                  <div>Проектна потужність СЕС</div>
+                  <div>по фотоелектричним модулям (по DC), кВт</div>
+                </div>
+                <div class="project-col project-col-number">
+                  <div>1064</div>
+                </div>
               </div>
-              <div class="project-col project-col-number">
-                <div>10</div>
+              <div class="project-row">
+                <div class="project-col project-col-title two-cols">
+                  <div></div>
+                  <div>по фотоелектричним модулям (по DC), кВт</div>
+                </div>
+                <div class="project-col project-col-number">
+                  <div>880</div>
+                </div>
               </div>
-            </div>
-            <div class="project-row">
-              <div class="project-col project-col-title two-cols">
-                <div></div>
-                <div>teasdasdasdasdasdasd</div>
+              <div class="project-row">
+                <div class="project-col project-col-title">Орієнтована кількість фотоелектричних модулів, шт</div>
+                <div class="project-col project-col-number">3870            </div>
               </div>
-              <div class="project-col project-col-number">
-                <div>10</div>
+              <div class="project-row">
+                <div class="project-col project-col-title">Одиночна потужність фотоелектричного модуля, Вт</div>
+                <div class="project-col project-col-number">275</div>
               </div>
-            </div>
-            <div class="project-row">
-              <div class="project-col project-col-title">teasdasdasdasdasdasd</div>
-              <div class="project-col project-col-number">10</div>
-            </div>
-            <div class="project-row">
-              <div class="project-col project-col-title">teasdasdasdasdasdasd</div>
-              <div class="project-col project-col-number">110</div>
+              <div class="project-row">
+                <div class="project-col project-col-title">Загальна площа земельної ділянки (орієнтовно), га</div>
+                <div class="project-col project-col-number">1,4008</div>
+              </div>
+              <div class="project-row">
+                <div class="project-col project-col-title">Спрінг-інвертор (на вибір проектувальників), один потужність 40 кВт</div>
+                <div class="project-col project-col-number">22</div>
+              </div>
+              <div class="project-row">
+                <div class="project-col project-col-title">Трансформаторна підстанція КТП 1000/10/0,4</div>
+                <div class="project-col project-col-number">1</div>
+              </div>
+              <div class="project-row">
+                <div class="project-col project-col-title">Адміністративно-побутовий корпус (існуючий) орієнтовно, м²</div>
+                <div class="project-col project-col-number">18</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="wrapper">
   <div class="row section-gallery">
     <div class="column-laptop-1-1">
-      <div class="gallery">
-        <div class="gallery__title"><span>галерея</span></div>
-        <div class="gallery__img">
-          <div class="column-laptop-1-4">img</div>
-          <div class="column-laptop-1-4">img</div>
-          <div class="column-laptop-1-4">img</div>
-          <div class="column-laptop-1-4">img</div>
+      <div class="gallery" id="gallery">
+        <div class="column-laptop-1-1">
+          <div class="gallery__title"><span>галерея</span></div>
         </div>
-        <div class="gallery__link"><a href="#">дивитись всі</a></div>
+        <div class="gallery__img">         
+          <div class="column-tablet-1-2 column-laptop-1-4 gallery__img-width"><img src="img/gallery-img1.jpg"></div>
+          <div class="column-tablet-1-2 column-laptop-1-4 gallery__img-width"><img src="img/gallery-img2.jpg"></div>
+          <div class="column-tablet-1-2 column-laptop-1-4 gallery__img-width"><img src="img/gallery-img3.jpg"></div>
+          <div class="column-tablet-1-2 column-laptop-1-4 gallery__img-width"><img src="img/gallery-img4.jpg"></div>
+        </div>
+        <div class="column-laptop-1-1">
+          <div class="gallery__link"><a href="#">Дивитись всі <img src="img/arrow-gallery.svg"></a></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row section-news">
-    <div class="column-laptop-1-1">
-      <div class="news">
-        <div class="news__title"><span>галерея</span></div>
-        <div class="gallery__img">
-          <div class="column-laptop-1-4">img</div>
-          <div class="column-laptop-1-4">img</div>
-          <div class="column-laptop-1-4">img</div>
-          <div class="column-laptop-1-4">img</div>
+</div>
+<div class="section-news">
+  <div class="wrapper">
+    <div class="row">
+      <div class="column-laptop-1-1">
+        <div class="news" id="news">
+          <div class="column-laptop-1-1">
+            <div class="news__title"><span>новини</span></div>
+            <div class="slick-carousel news__items">
+              <div class="column-tablet-1-2 column-laptop-1-4">
+                <div class="news-item">
+                  <div class="news-item__img news__img-width"><img src="img/news1.jpg"></div>
+                  <div class="news-item__title"><span>Назва новини</span></div>
+                  <div class="news-item__date"><span>15.07.2019</span></div>
+                  <div class="news-item__text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede. </span></div>
+                  <div class="news-item__link"><a href="news-open.html">Читати<span>&#8594;</span></a></div>
+                </div>
+              </div>
+              <div class="column-tablet-1-2 column-laptop-1-4">
+                <div class="news-item">
+                  <div class="news-item__img news__img-width"><img src="img/news2.jpg"></div>
+                  <div class="news-item__title"><span>Якщо назва новини є досить довгою, це буде виглядати...</span></div>
+                  <div class="news-item__date"><span>08.07.2019</span></div>
+                  <div class="news-item__text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede. </span></div>
+                  <div class="news-item__link"><a href="news-open.html">Читати<span>&#8594;</span></a></div>
+                </div>
+              </div>
+              <div class="column-tablet-1-2 column-laptop-1-4">
+                <div class="news-item">
+                  <div class="news-item__img news__img-width"><img src="img/news3.jpg"></div>
+                  <div class="news-item__title"><span>Назва новини</span></div>
+                  <div class="news-item__date"><span>28.06.2019</span></div>
+                  <div class="news-item__text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede. </span></div>
+                  <div class="news-item__link"><a href="#">Читати<span>&#8594;</span></a></div>
+                </div>
+              </div>
+              <div class="column-tablet-1-2 column-laptop-1-4">
+                <div class="news-item">
+                  <div class="news-item__img news__img-width"><img src="img/news4.jpg"></div>
+                  <div class="news-item__title"><span>Назва новини</span></div>
+                  <div class="news-item__date"><span>14.06.2019</span></div>
+                  <div class="news-item__text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede. </span></div>
+                  <div class="news-item__link"><a href="news-open.html">Читати<span>&#8594;</span></a></div>
+                </div>
+              </div>
+              <div class="column-tablet-1-2 column-laptop-1-4">
+                <div class="news-item">
+                  <div class="news-item__img news__img-width"><img src="img/news4.jpg"></div>
+                  <div class="news-item__title"><span>Назва новини</span></div>
+                  <div class="news-item__date"><span>14.06.2019</span></div>
+                  <div class="news-item__text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede. </span></div>
+                  <div class="news-item__link"><a href="news-open.html">Читати<span>&#8594;</span></a></div>
+                </div>
+              </div>
+              <div class="column-tablet-1-2 column-laptop-1-4">
+                <div class="news-item">
+                  <div class="news-item__img news__img-width"><img src="img/news4.jpg"></div>
+                  <div class="news-item__title"><span>Назва новини</span></div>
+                  <div class="news-item__date"><span>14.06.2019</span></div>
+                  <div class="news-item__text"><span>Lorem ipsum dolor sit amet, praesent eget, semper fermentum tortor nulla wisi vel, integer pede. </span></div>
+                  <div class="news-item__link"><a href="news-open.html">Читати<span>&#8594;    </span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="gallery__link"><a href="#">дивитись всі</a></div>
       </div>
     </div>
   </div>
-  <div class="footer">
-    <div class="wrapper">
-      <div class="row"></div>
+</div>
+<div class="footer">
+  <div class="footer__map" id="contact">
+    <div id="map-canvas">
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyCCtqo1cC4VpQfgYyZunS0bHpCk4IV0ATU" type="text/javascript"> </script>
     </div>
   </div>
-  <script src="js/src.js"></script>
-</body>
+  <div class="wrapper">
+    <div class="row">       
+      <div class="footer__box"><span>с. Марківці, вул. Центральна, ур. «Гора», Тисменицький район, Івано-Франківська область</span></div>
+    </div>
+  </div>
+  <div class="footer__copyright"><span>@Сонячний порт 2019</span></div>
+</div>
+<script src="js/src.js"></script>
