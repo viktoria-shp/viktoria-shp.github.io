@@ -14,13 +14,16 @@ function positioncheck(){
 }
 $(window).scroll(function(){
   positioncheck();
+  console.log('scroll');
+  if($(".menu").hasClass('menu-is-active')) {
+    $('.menu-opener').trigger('click');
+  }
 });
 $(window).resize(function(){});
 positioncheck();
 
 $().ready(function(){
   $('.slick-carousel').slick({
-    arrows: true,
     //infinite: true,
     speed: 700,
     //autoplay:true,
@@ -32,21 +35,24 @@ $().ready(function(){
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 1,
+        dots: true
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        dots: true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -61,7 +67,7 @@ $().ready(function(){
       e.preventDefault();
       if($(this.hash).length){
         $('body,html').animate({
-            scrollTop: $(this.hash).offset().top
+            scrollTop: $(this.hash).offset().top - 100
         }, 1000);
         $(this).closest('.menu').find('.active').removeClass('active');
         $(this).closest('li').addClass('active')
