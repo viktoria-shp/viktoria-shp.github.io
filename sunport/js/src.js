@@ -64,8 +64,8 @@ $().ready(function(){
   // scroll section
   let scrollLink = $('.scroll');
   scrollLink.click(function (e) {
-      e.preventDefault();
       if($(this.hash).length){
+        e.preventDefault();
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top - 100
         }, 1000);
